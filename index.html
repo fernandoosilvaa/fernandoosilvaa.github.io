@@ -1,27 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fernando Silva</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<html>
-  <head>
-    <link rel="icon" type="image/jpeg" href="images/favicon.ico">
-    <meta name="description" content="Fernando Silva's home in the web">
-    <meta name="keywords" content="fernando, silva, software, developer, engineer, mulesoft, mule, api, microservices, caracas, venezuela">
-    <title>Fernando Silva</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Domine:400,300,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <center>
-      <h3 class='hello-world'>Hey there, <b>I'm Fernando Silva.</b></h3>
-      <p class='about-me'>I help organizations connect applications, data, and devices, both on-premises and in the cloud using MuleSoft or Workato products<br>
-      Currently working as a <b>Integration Solution Architect</b>.<br>
-      <div class='social-profiles'>
-        <a href="http://linkedin.com/in/ingfernandosilva"><img src="images/linkedin.png" alt="LinkedIn" height="50" width="50"></a>
+  <aside class="sidebar">
+    <img class="avatar" src="images/fernando.jpg" alt="Fernando Silva">
+    <div class="name">Fernando Silva</div>
+    <div class="role" data-i18n="role">Integration Solution Architect</div>
+    <div class="locale">Caracas, Venezuela</div>
+
+    <div class="lang-switch">
+      <button type="button" id="btn-en" class="active">English</button>
+      <button type="button" id="btn-es">Español</button>
+    </div>
+
+    <nav>
+      <a class="nav-home" href="#home"><i class="ti ti-home"></i><span data-i18n="nav_home">Home</span></a>
+      <a class="nav-personal" href="#personal"><i class="ti ti-user"></i><span data-i18n="nav_personal">Personal</span></a>
+      <a class="nav-work" href="#work"><i class="ti ti-briefcase"></i><span data-i18n="nav_work">Professional</span></a>
+      <a class="nav-contact" href="#contact"><i class="ti ti-mail"></i><span data-i18n="nav_contact">Contact</span></a>
+    </nav>
+
+    <div class="foot">
+      &copy; 2026 Fernando Silva.<br><span data-i18n="rights">All rights reserved.</span>
+    </div>
+  </aside>
+
+  <div class="content">
+
+    <section id="home" class="hero reveal">
+      <img class="hero-photo" src="images/fernando.jpg" alt="Fernando Silva">
+      <div class="hero-text">
+        <h1>Fernando Silva</h1>
+        <p data-i18n="hero_tagline">
+          Software Engineer<br>Integration Solution Architect
+        </p>
       </div>
-      <div class='email-wrapper'>
-        <a href="mailto:contact@silvafernando.com" class='btn'>Get in touch with me!</a>
+    </section>
+
+    <section id="personal" class="personal-hero reveal">
+      <div class="personal-text">
+        <div class="eyebrow" data-i18n="personal_eyebrow">Personal</div>
+        <p data-i18n="personal_body">
+          Born and raised in Caracas, Venezuela, in a middle to low class
+          family that taught me to work honestly for what I want and be
+          strictly correct in the process. That mindset has stayed with me
+          ever since, shaping how I approach everything I do. I love comedy,
+          I'm always working on becoming a better version of myself, and I'm
+          fascinated by aviation.
+        </p>
+        <div class="tags">
+          <span class="tag tag-venezuela">
+            <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+              <rect width="30" height="20" fill="#00247D"/>
+              <rect width="30" height="6.67" fill="#FFCC00"/>
+              <rect y="13.33" width="30" height="6.67" fill="#CF142B"/>
+              <g fill="#fff">
+                <circle cx="9.5" cy="9.7" r="0.8"/>
+                <circle cx="11.7" cy="8.2" r="0.8"/>
+                <circle cx="14" cy="7.5" r="0.8"/>
+                <circle cx="16.3" cy="7.5" r="0.8"/>
+                <circle cx="18.6" cy="8.2" r="0.8"/>
+                <circle cx="20.8" cy="9.7" r="0.8"/>
+                <circle cx="15" cy="11.5" r="0.8"/>
+              </g>
+            </svg>
+            <span data-i18n="tag_venezuelan">Venezuelan</span>
+          </span>
+          <span class="tag tag-comedy"><i class="ti ti-mood-smile"></i><span data-i18n="tag_comedy">Comedy</span></span>
+          <span class="tag tag-selfdev"><i class="ti ti-trending-up"></i><span data-i18n="tag_selfdev">Self-development</span></span>
+          <span class="tag tag-aviation"><i class="ti ti-plane"></i><span data-i18n="tag_aviation">Aviation</span></span>
+          <span class="tag tag-books"><i class="ti ti-book"></i><span data-i18n="tag_books">Non-fiction books</span></span>
+        </div>
       </div>
-    </center>
-    <script>
-    </script>
-  </body>
+      <img class="personal-photo" src="images/caracas.jpg" alt="Caracas, Venezuela skyline with El Ávila mountain">
+    </section>
+
+    <section id="work" class="work-hero reveal">
+      <img class="work-photo" src="images/work.jpg" alt="Fernando Silva">
+      <div class="work-text">
+        <div class="eyebrow" data-i18n="nav_work">Professional</div>
+        <p data-i18n="work_body1">
+          I'm a Software Engineer who specializes in IT integrations using
+          MuleSoft and Workato. In practice, that means I'm the techie who
+          helps companies connect their enterprise applications in a
+          structured way, building reusable, purposeful APIs that unlock
+          data from systems, compose it into processes, or deliver it as
+          an experience.
+        </p>
+        <p data-i18n="work_body2">
+          With over 10 years of experience, I've worked remotely as a
+          contractor based in Venezuela, delivering integration projects
+          across North America, Central America, South America, and Asia.
+          Along the way, I earned a degree in Software Engineering and
+          built my career starting with MuleSoft before branching into
+          Workato as well.
+        </p>
+        <p data-i18n="work_body3">
+          To me, finding your passion means finding the hard problems
+          you're willing to keep wrestling with, even when they turn out
+          tougher than expected — the kind of frustration you're happy to
+          sit with because you know you'll learn from it. I believe I've
+          found mine in software engineering, and I try to bring honesty
+          and integrity to everything I do.
+        </p>
+        <div class="badges">
+          <span class="badge"><img src="images/mulesoft-logo.png" alt="MuleSoft logo" class="mulesoft-logo">MuleSoft</span>
+          <span class="badge"><img src="images/workato-logo.png" alt="Workato logo" class="workato-logo"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section reveal">
+      <div class="work-detail">
+
+        <div class="sub-block">
+          <div class="sub-head" data-i18n="sub_experience">Experience</div>
+          <ul class="timeline">
+            <li>
+              <span class="timeline-node"><i class="ti ti-briefcase" aria-hidden="true"></i></span>
+              <div class="timeline-card">
+                <div class="timeline-role">Solutions Architect</div>
+                <div class="timeline-meta">API People · 2022 – <span data-i18n="present">Present</span></div>
+                <p class="timeline-desc" data-i18n="exp1_desc">Design, oversee, and lead MuleSoft and Workato integration projects for healthcare, banking, and fintech clients across the USA.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-node"><i class="ti ti-briefcase" aria-hidden="true"></i></span>
+              <div class="timeline-card">
+                <div class="timeline-role">Senior MuleSoft Developer &amp; Architect</div>
+                <div class="timeline-meta">Number8 · 2020 – 2022</div>
+                <p class="timeline-desc" data-i18n="exp2_desc">Designed, developed, and supported integration solutions using MuleSoft (Mule 4.x), while mentoring team members.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-node"><i class="ti ti-briefcase" aria-hidden="true"></i></span>
+              <div class="timeline-card">
+                <div class="timeline-role">Senior MuleSoft Developer</div>
+                <div class="timeline-meta">Launchpad Technologies · 2019 – 2020</div>
+                <p class="timeline-desc" data-i18n="exp3_desc">Led analysis, solution design, and new API standards for SaaS CRM, legal, HR, and ERP integration projects.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-node"><i class="ti ti-briefcase" aria-hidden="true"></i></span>
+              <div class="timeline-card">
+                <div class="timeline-role">MuleSoft Technical Lead</div>
+                <div class="timeline-meta">Number8 · 2018 – 2019</div>
+                <p class="timeline-desc" data-i18n="exp4_desc">Led design, development, and support of integration solutions using MuleSoft (Mule 4.x).</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-node"><i class="ti ti-briefcase" aria-hidden="true"></i></span>
+              <div class="timeline-card">
+                <div class="timeline-role">MuleSoft Developer</div>
+                <div class="timeline-meta">NEWTOMS · 2017 – 2018</div>
+                <p class="timeline-desc" data-i18n="exp5_desc">Contributed to integration solutions using MuleSoft Anypoint (Mule 3.x) across projects in the USA, Mexico, Panama, Venezuela, and Myanmar.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sub-block">
+          <div class="sub-head" data-i18n="sub_certs">Latest certifications</div>
+          <ul class="cert-list">
+            <li><img class="cert-logo" src="images/mulesoft-logo.png" alt="MuleSoft"><span class="cert-name">Anypoint Platform Operations: Runtime Fabric</span><span class="cert-year">2020</span></li>
+            <li><img class="cert-logo" src="images/mulesoft-logo.png" alt="MuleSoft"><span class="cert-name">Anypoint Platform Development: DataWeave 2.0</span><span class="cert-year">2020</span></li>
+            <li>
+              <svg class="cert-logo" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="11" height="11" fill="#F25022"/>
+                <rect x="12" y="0" width="11" height="11" fill="#7FBA00"/>
+                <rect x="0" y="12" width="11" height="11" fill="#00A4EF"/>
+                <rect x="12" y="12" width="11" height="11" fill="#FFB900"/>
+              </svg>
+              <span class="cert-name">Microsoft Certified: Azure Fundamentals</span><span class="cert-year">2021</span>
+            </li>
+            <li><img class="cert-logo" src="images/mulesoft-logo.png" alt="MuleSoft"><span class="cert-name">MuleSoft Certified Developer - Level 1 (x2, Renewed)</span><span class="cert-year">2021</span></li>
+            <li><img class="cert-logo" src="images/mulesoft-logo.png" alt="MuleSoft"><span class="cert-name">MuleSoft Certified Platform Architect - Level 1 (x2, Renewed)</span><span class="cert-year">2022</span></li>
+            <li><img class="cert-logo" src="images/mulesoft-logo.png" alt="MuleSoft"><span class="cert-name">MuleSoft Certified Integration Architect - Level 1 (x3, Renewed)</span><span class="cert-year">2023</span></li>
+            <li><img class="cert-logo" src="images/workato-icon.png" alt="Workato"><span class="cert-name">Workato Automation Pro I Certificate</span><span class="cert-year">2024</span></li>
+            <li><img class="cert-logo" src="images/workato-icon.png" alt="Workato"><span class="cert-name">Workato Automation Pro II Certificate</span><span class="cert-year">2024</span></li>
+            <li><img class="cert-logo" src="images/workato-icon.png" alt="Workato"><span class="cert-name">Workato Automation Pro III Certificate</span><span class="cert-year">2024</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-block">
+          <div class="sub-head" data-i18n="sub_languages">Languages</div>
+          <ul class="lang-list">
+            <li>
+              <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="20" fill="#AA151B"/>
+                <rect y="5" width="30" height="10" fill="#F1BF00"/>
+              </svg>
+              <span data-i18n="lang_spanish">Spanish</span><span class="lang-level" data-i18n="lang_native">Native</span>
+            </li>
+            <li>
+              <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="20" fill="#00247D"/>
+                <path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="4"/>
+                <path d="M0,0 L30,20 M30,0 L0,20" stroke="#CF142B" stroke-width="2"/>
+                <path d="M15,0 L15,20 M0,10 L30,10" stroke="#fff" stroke-width="6"/>
+                <path d="M15,0 L15,20 M0,10 L30,10" stroke="#CF142B" stroke-width="3.5"/>
+              </svg>
+              <span data-i18n="lang_english">English</span><span class="lang-level">B2</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="community-hero reveal">
+      <img class="community-photo" src="images/community.jpg" alt="Fernando Silva speaking at the Caracas MuleSoft Meetup">
+      <div class="community-text">
+        <div class="sub-head" data-i18n="sub_community">Community</div>
+        <p class="community-body" data-i18n="community_body">
+          I founded and led the Caracas MuleSoft Meetup group, and went on
+          to speak at MuleSoft meetups across Venezuela, Mexico, Panama,
+          and Peru — sharing integration practices with other cities'
+          developer communities.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="half contact reveal">
+      <div class="eyebrow" data-i18n="nav_contact">Contact</div>
+      <div class="link-row">
+        <a class="li-link" href="https://www.linkedin.com/in/fernandosilvasw/" target="_blank" rel="noopener">
+          <i class="ti ti-brand-linkedin"></i>
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+<script>
+  var translations = {
+    en: {
+      role: "Integration Solution Architect",
+      rights: "All rights reserved.",
+      nav_home: "Home",
+      nav_personal: "Personal",
+      nav_work: "Professional",
+      nav_contact: "Contact",
+      hero_tagline: "Software Engineer<br>Integration Solution Architect",
+      personal_eyebrow: "Personal",
+      personal_body: "Born and raised in Caracas, Venezuela, in a middle to low class family that taught me to work honestly for what I want and be strictly correct in the process. That mindset has stayed with me ever since, shaping how I approach everything I do. I love comedy, I'm always working on becoming a better version of myself, and I'm fascinated by aviation.",
+      tag_venezuelan: "Venezuelan",
+      tag_comedy: "Comedy",
+      tag_selfdev: "Self-development",
+      tag_aviation: "Aviation",
+      tag_books: "Non-fiction books",
+      work_body1: "I'm a Software Engineer who specializes in IT integrations using MuleSoft and Workato. In practice, that means I'm the techie who helps companies connect their enterprise applications in a structured way, building reusable, purposeful APIs that unlock data from systems, compose it into processes, or deliver it as an experience.",
+      work_body2: "With over 10 years of experience, I've worked remotely as a contractor based in Venezuela, delivering integration projects across North America, Central America, South America, and Asia. Along the way, I earned a degree in Software Engineering and built my career starting with MuleSoft before branching into Workato as well.",
+      work_body3: "To me, finding your passion means finding the hard problems you're willing to keep wrestling with, even when they turn out tougher than expected — the kind of frustration you're happy to sit with because you know you'll learn from it. I believe I've found mine in software engineering, and I try to bring honesty and integrity to everything I do.",
+      sub_experience: "Experience",
+      sub_certs: "Latest certifications",
+      sub_languages: "Languages",
+      sub_community: "Community",
+      present: "Present",
+      exp1_desc: "Design, oversee, and lead MuleSoft and Workato integration projects for healthcare, banking, and fintech clients across the USA.",
+      exp2_desc: "Designed, developed, and supported integration solutions using MuleSoft (Mule 4.x), while mentoring team members.",
+      exp3_desc: "Led analysis, solution design, and new API standards for SaaS CRM, legal, HR, and ERP integration projects.",
+      exp4_desc: "Led design, development, and support of integration solutions using MuleSoft (Mule 4.x).",
+      exp5_desc: "Contributed to integration solutions using MuleSoft Anypoint (Mule 3.x) across projects in the USA, Mexico, Panama, Venezuela, and Myanmar.",
+      lang_spanish: "Spanish",
+      lang_native: "Native",
+      lang_english: "English",
+      community_body: "I founded and led the Caracas MuleSoft Meetup group, and went on to speak at MuleSoft meetups across Venezuela, Mexico, Panama, and Peru — sharing integration practices with other cities' developer communities."
+    },
+    es: {
+      role: "Arquitecto de soluciones de integración",
+      rights: "Todos los derechos reservados.",
+      nav_home: "Inicio",
+      nav_personal: "Personal",
+      nav_work: "Profesional",
+      nav_contact: "Contacto",
+      hero_tagline: "Ingeniero de Software<br>Arquitecto de soluciones de integración",
+      personal_eyebrow: "Personal",
+      personal_body: "Nací y crecí en Caracas, Venezuela, en una familia de clase media-baja que me enseñó a trabajar honestamente por lo que quiero y a ser estrictamente correcto en el proceso. Esa mentalidad me ha acompañado desde entonces, marcando la forma en que enfrento todo lo que hago. Me encanta la comedia, siempre estoy trabajando en ser una mejor versión de mí mismo, y me fascina la aviación.",
+      tag_venezuelan: "Venezolano",
+      tag_comedy: "Comedia",
+      tag_selfdev: "Desarrollo personal",
+      tag_aviation: "Aviación",
+      tag_books: "Libros de no ficción",
+      work_body1: "Soy Ingeniero de Software especializado en integraciones de TI usando MuleSoft y Workato. En la práctica, eso significa que soy el técnico que ayuda a las empresas a conectar sus aplicaciones empresariales de forma estructurada, construyendo APIs reutilizables y con propósito que liberan datos de los sistemas, los combinan en procesos o los entregan como una experiencia.",
+      work_body2: "Con más de 10 años de experiencia, he trabajado de forma remota como contratista desde Venezuela, entregando proyectos de integración en Norteamérica, Centroamérica, Sudamérica y Asia. En el camino, obtuve un título en Ingeniería de Software y construí mi carrera comenzando con MuleSoft antes de expandirme también a Workato.",
+      work_body3: "Para mí, encontrar tu pasión significa encontrar los problemas difíciles con los que estás dispuesto a seguir lidiando, incluso cuando resultan más difíciles de lo esperado — el tipo de frustración que disfrutas sobrellevar porque sabes que aprenderás de ella. Creo que encontré la mía en la ingeniería de software, y procuro llevar honestidad e integridad a todo lo que hago.",
+      sub_experience: "Experiencia",
+      sub_certs: "Certificaciones más recientes",
+      sub_languages: "Idiomas",
+      sub_community: "Comunidad",
+      present: "Presente",
+      exp1_desc: "Diseño, superviso y lidero proyectos de integración con MuleSoft y Workato para clientes de salud, banca y fintech en todo EE. UU.",
+      exp2_desc: "Diseñé, desarrollé y di soporte a soluciones de integración usando MuleSoft (Mule 4.x), mientras guiaba a otros miembros del equipo.",
+      exp3_desc: "Lideré el análisis, diseño de soluciones y nuevos estándares de API para proyectos de integración de CRM, legal, RR. HH. y ERP tipo SaaS.",
+      exp4_desc: "Lideré el diseño, desarrollo y soporte de soluciones de integración usando MuleSoft (Mule 4.x).",
+      exp5_desc: "Contribuí a soluciones de integración usando MuleSoft Anypoint (Mule 3.x) en proyectos en EE. UU., México, Panamá, Venezuela y Myanmar.",
+      lang_spanish: "Español",
+      lang_native: "Nativo",
+      lang_english: "Inglés",
+      community_body: "Fundé y lideré el grupo Caracas MuleSoft Meetup, y luego fui ponente en meetups de MuleSoft en Venezuela, México, Panamá y Perú, compartiendo prácticas de integración con comunidades de desarrolladores de otras ciudades."
+    }
+  };
+
+  function setLanguage(lang){
+    var dict = translations[lang];
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var key = el.getAttribute('data-i18n');
+      if(dict[key]){ el.innerHTML = dict[key]; }
+    });
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+    document.documentElement.lang = lang;
+  }
+
+  document.getElementById('btn-en').addEventListener('click', function(){ setLanguage('en'); });
+  document.getElementById('btn-es').addEventListener('click', function(){ setLanguage('es'); });
+
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        } else {
+          entry.target.classList.remove('is-visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.reveal').forEach(function(el){
+      revealObserver.observe(el);
+    });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){
+      el.classList.add('is-visible');
+    });
+  }
+</script>
+
+</body>
 </html>
