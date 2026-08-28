@@ -39,6 +39,8 @@
 
   html{ scroll-behavior: smooth; }
 
+  html{ overflow-x: hidden; }
+
   html,body{
     min-height:100%;
     background: var(--bg);
@@ -176,30 +178,25 @@
   }
 
   .hero{
+    display: grid;
+    grid-template-columns: 56% 44%;
     min-height: 100vh;
-    display:flex;
-    align-items:stretch;
-    gap: 3rem;
-    padding: 0;
     border-bottom: 1px solid var(--line);
     background: var(--bg);
   }
 
   .hero-photo{
-    width: 56%;
-    height: auto;
-    align-self: stretch;
-    flex-shrink:0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     box-shadow: inset -1px 0 0 var(--line);
   }
 
   .hero-text{
-    flex: 1;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    padding: 4rem 4rem 4rem 0;
+    padding: 4rem;
   }
 
   .hero-text h1{
@@ -235,14 +232,13 @@
   .contact{ background: var(--bg); min-height: 28vh; padding: 2rem 4rem; }
 
   .personal-hero{
+    display: grid;
+    grid-template-columns: 44% 56%;
     min-height: 100vh;
-    display:flex;
-    align-items:stretch;
     background: var(--bg);
   }
 
   .personal-text{
-    flex: 1;
     min-width: 0;
     display:flex;
     flex-direction:column;
@@ -253,33 +249,28 @@
   }
 
   .personal-photo{
-    width: 56%;
-    height: auto;
-    align-self: stretch;
-    flex-shrink:0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     box-shadow: inset 1px 0 0 var(--line);
   }
 
   .community-hero{
+    display: grid;
+    grid-template-columns: 56% 44%;
     min-height: 100vh;
-    display:flex;
-    align-items:stretch;
     background: var(--bg);
     border-bottom: 1px solid var(--line);
   }
 
   .community-photo{
-    width: 56%;
-    height: auto;
-    align-self: stretch;
-    flex-shrink:0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     box-shadow: inset -1px 0 0 var(--line);
   }
 
   .community-text{
-    flex: 1;
     min-width: 0;
     display:flex;
     flex-direction:column;
@@ -292,17 +283,15 @@
   .community-text .sub-head{ margin-bottom: 1.5rem; font-size: clamp(1.8rem, 4.5vw, 3.45rem); overflow-wrap: break-word; }
 
   .work-hero{
+    display: grid;
+    grid-template-columns: 56% 44%;
     min-height: 100vh;
-    display:flex;
-    align-items:stretch;
     background: var(--bg);
   }
 
   .work-photo-placeholder{
-    width: 56%;
-    height: auto;
-    align-self: stretch;
-    flex-shrink:0;
+    width: 100%;
+    height: 100%;
     background: var(--sidebar-bg);
     box-shadow: inset -1px 0 0 var(--line);
     display:flex;
@@ -319,16 +308,13 @@
   .work-photo-placeholder span{ font-size: 0.95rem; line-height: 1.5; }
 
   .work-photo{
-    width: 56%;
-    height: auto;
-    align-self: stretch;
-    flex-shrink:0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     box-shadow: inset -1px 0 0 var(--line);
   }
 
   .work-text{
-    flex: 1;
     min-width: 0;
     display:flex;
     flex-direction:column;
@@ -418,7 +404,7 @@
 
   .work-detail{
     width: 100%;
-    max-width: 640px;
+    max-width: 864px;
     text-align: left;
     display:flex;
     flex-direction:column;
@@ -626,16 +612,16 @@
   }
 
   .badge img{
-    height: 34px;
+    height: 36px;
     width: auto;
   }
 
   .badge img.workato-logo{
-    height: 30px;
+    height: 36px;
   }
 
   .badge img.mulesoft-logo{
-    height: 42px;
+    height: 36px;
   }
 
   .badge-mark{
@@ -659,11 +645,10 @@
       width: 100%;
       height: auto;
       position: relative;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content:center;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem 1.5rem;
-      gap: 0.5rem;
+      gap: 0;
     }
     .sidebar nav{
       margin-top: 1rem;
@@ -673,36 +658,76 @@
     }
     .sidebar .foot{ margin-top: 1.5rem; }
     .half{ padding: 3rem 1.75rem; }
-    .personal-hero{
-      flex-direction: column;
-      height: auto;
+    .contact{ padding: 2rem 1.75rem; }
+
+    .personal-hero{ grid-template-columns: 1fr; min-height: auto; }
+    .personal-photo{
+      width: 100%;
+      height: 240px;
     }
-    .personal-text{ padding: 3rem 1.75rem; }
-    .personal-photo{ width: 100%; height: 240px; }
-    .community-hero{
-      flex-direction: column;
-      height: auto;
+    .personal-text{
+      padding: 3rem 1.75rem;
     }
-    .community-text{ padding: 3rem 1.75rem; }
-    .community-photo{ width: 100%; height: 240px; }
-    .work-hero{
-      flex-direction: column;
-      height: auto;
+
+    .community-hero{ grid-template-columns: 1fr; min-height: auto; }
+    .community-photo{
+      width: 100%;
+      height: 240px;
     }
-    .work-text{ padding: 3rem 1.75rem; }
-    .work-photo{ width: 100%; height: 220px; }
+    .community-text{
+      padding: 3rem 1.75rem;
+    }
+
+    .work-hero{ grid-template-columns: 1fr; min-height: auto; }
+    .work-photo, .work-photo-placeholder{
+      width: 100%;
+      height: 220px;
+    }
+    .work-text{
+      padding: 3rem 1.75rem;
+    }
+
     .half h2{ font-size: 1.9rem; }
     .personal-text .eyebrow, .work-text .eyebrow, .contact .eyebrow{ font-size: 1.9rem; }
     .sub-head{ font-size: 1.7rem; }
-    .hero{
-      flex-direction: column;
-      text-align:center;
-      padding: 0;
-      gap: 0;
+
+    .hero{ grid-template-columns: 1fr; min-height: auto; }
+    .hero-photo{
+      width: 100%;
+      height: 260px;
     }
-    .hero-photo{ width: 100%; height: 260px; }
-    .hero-text{ align-items:center; padding: 2.5rem 1.75rem; }
+    .hero-text{
+      align-items:center;
+      text-align:center;
+      padding: 2.5rem 1.75rem;
+    }
     .hero-text h1{ font-size: 2.2rem; }
+
     .work-detail-section{ padding: 3rem 1.75rem; }
     .work-detail{ gap: 1.75rem; }
+  }
+
+  @media (max-width: 420px){
+    .avatar{ width: 84px; height: 84px; }
+    .hero-text h1{ font-size: 1.8rem; }
+    .hero-text p{ font-size: 1.3rem; }
+    .personal-text .eyebrow, .work-text .eyebrow, .contact .eyebrow{ font-size: 1.6rem; }
+    .sub-head{ font-size: 1.4rem; }
+    .half h2{ font-size: 1.5rem; }
+
+    .cert-list li, .lang-list li{
+      flex-wrap: wrap;
+      row-gap: 0.25rem;
+    }
+    .cert-name{ flex-basis: 100%; }
+    .cert-year{ margin-left: calc(22px + 0.75rem); }
+    .lang-list li span:nth-of-type(1){ flex-basis: 100%; }
+    .lang-level{ margin-left: calc(24px + 0.75rem); }
+
+    .badge{ padding: 0.7rem 1.25rem; gap: 0.6rem; font-size: 1rem; }
+    .badge img, .badge img.workato-logo, .badge img.mulesoft-logo{ height: 28px; }
+
+    .tag{ font-size: 0.82rem; padding: 0.4rem 0.85rem; }
+
+    .timeline-card{ padding: 0.85rem 1rem; }
   }
