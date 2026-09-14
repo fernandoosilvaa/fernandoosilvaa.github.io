@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fernando Silva</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <style>
   html, body {
@@ -52,10 +51,6 @@
   </div>
 
 <script>
-  var btnEnEl = document.getElementById('btn-en');
-  var btnEsEl = document.getElementById('btn-es');
-  if (btnEnEl) btnEnEl.addEventListener('click', function(){ setLanguage('en'); });
-  if (btnEsEl) btnEsEl.addEventListener('click', function(){ setLanguage('es'); });
 
   if ('IntersectionObserver' in window) {
     var revealObserver = new IntersectionObserver(function(entries){
